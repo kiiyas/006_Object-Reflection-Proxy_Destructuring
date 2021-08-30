@@ -2,7 +2,7 @@ import getAvailableAttack from '../app';
 
 const character = {
   name: 'Лучник',
-  type: 'Bowman',
+  type: 'Bowerman',
   health: 50,
   level: 3,
   attack: 40,
@@ -18,12 +18,12 @@ const character = {
       id: 9,
       name: 'Нокаутирующий удар',
       icon: 'http://...',
-      // <- обратите внимание, описание "засекречено"
+      // описание "засекречено"
     },
   ],
 };
 
-test('The function should return an array of objects with fields (id, name, description, icon), if there is no description, the default value "Описание недоступно" is set', () => {
+test('Should return an array of objects with fields (id, name, description(or it\'s default value), icon)', () => {
   const expected = [
     {
       id: 8,
